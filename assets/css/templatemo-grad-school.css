@@ -719,7 +719,7 @@ section.coming-soon .right-content {
 @media screen and (max-width: 767px) {
 
   section.coming-soon .right-content {
-      margin-top: 60px;
+      margin-top: 10px;
       margin-left: 0px;
   }
 
