@@ -82,7 +82,58 @@ https://templatemo.com/tm-557-grad-school
   }
 
   a.menu-link {
+<<<<<<< HEAD
     display: none;
+=======
+    float: right;
+    display: block;
+    font-size: 36px;
+    color: #fff;
+    padding-right: 30px;
+    padding-top: 15px;
+  }
+  
+  nav[role="navigation"] {
+    clear: both;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .js nav[role="navigation"] {
+    overflow: hidden;
+    max-height: 0;
+  }
+  nav[role="navigation"].active {
+    max-height: 20em;
+    height: 20em;
+    overflow-y: scroll;
+  }
+  nav[role="navigation"] ul {
+    top: 0;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(250,250,250,0.25);
+    background-color: rgba(22,34,57,0.99);
+  }
+  nav[role="navigation"] li a {
+    display: block;
+    padding: 15px 0px;
+    border-bottom: 1px solid rgba(250,250,250,0.25);
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  nav[role="navigation"] li:hover a,
+  nav[role="navigation"] li.active a {
+      color: #f5a425;
+>>>>>>> 1812b86069d76b791931fa672879de1aaf7fa2a5
   }
 
   @media screen and (max-width: 950px) {
@@ -283,7 +334,19 @@ https://templatemo.com/tm-557-grad-school
   .main-menu li .sub-menu li a:hover {
     color: #f5a425;
     border: none;
+<<<<<<< HEAD
   }
+=======
+}
+
+.main-nav li:hover a,
+.main-nav li.active a {
+    border: 2px solid #f5a425;
+}
+.main-nav li.selected a {
+  border: 2px solid #f5a425;
+}
+>>>>>>> 1812b86069d76b791931fa672879de1aaf7fa2a5
 
   .main-nav li:hover a,
   .main-nav li.active a {
@@ -298,6 +361,14 @@ https://templatemo.com/tm-557-grad-school
       border-bottom: 1px solid rgba(250, 250, 250, 0.25);
     }
   }
+<<<<<<< HEAD
+=======
+  .main-nav li.selected a {
+    border: 2px solid transparent;
+    border-bottom: 1px solid rgba(250,250,250,0.25);
+  }
+}
+>>>>>>> 1812b86069d76b791931fa672879de1aaf7fa2a5
 
 
   /* Slider */
@@ -513,6 +584,7 @@ https://templatemo.com/tm-557-grad-school
     background-color: #172238;
     background-repeat: no-repeat;
     background-size: cover;
+<<<<<<< HEAD
     padding-bottom: 100px;
   }
 
@@ -560,6 +632,50 @@ https://templatemo.com/tm-557-grad-school
   }
 
   #tabs ul li a:after {
+=======
+    padding-bottom: 200px;
+}
+
+#tabs {
+  text-align: center;
+}
+#tabs ul {
+  margin: 0;
+  padding: 0;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 0;
+  -moz-column-gap: 0;
+  column-gap: 0;
+}
+#tabs ul::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#tabs ul li {
+  display: block;
+  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+#tabs ul li a {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: 0;
+  padding-bottom: 30px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+#tabs ul li a:after {
+>>>>>>> 1812b86069d76b791931fa672879de1aaf7fa2a5
     transition: all 0.3s;
     width: 10px;
     height: 10px;
