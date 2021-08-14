@@ -512,8 +512,12 @@ section.features .col-4 {
   }
 
 }
-
-
+/*
+.tab-pane{
+  height:516px;
+  width: auto;
+  overflow-y: scroll;
+}
 
 /* Why Choosing Us */
 
@@ -521,7 +525,7 @@ section.why-us {
   background-image: url(../images/choosing-bg.jpg);
   background-color: #172238;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
   padding-bottom: 40px;
 }
 

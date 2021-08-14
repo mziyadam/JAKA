@@ -42,11 +42,10 @@ https://templatemo.com/tm-557-grad-school
     <nav id="menu" class="main-nav" role="navigation">
       <ul class="main-menu">
         <li><a href="index.html" class="external">Home</a></li>
-        <li class="selected"><a href="inkubasi.html">Inkubasi Digital Bahasa</a></li>
+        <li class="selected"><a href="#">Inkubasi Digital Bahasa</a></li>
         <li><a href="jawara.html" class="external">Jawara Center</a></li>
         <li><a href="tukar.html" class="external">Student Exchange</a></li>
-        <li><a href="pkl.html" class="external">On The Job Training</a></li>
-        <li><a href="#" class="external">Filter Admin</a></li>
+        <li><a href="training.html" class="external">On The Job Training</a></li>
       </ul>
     </nav>
   </header>
@@ -425,74 +424,12 @@ https://templatemo.com/tm-557-grad-school
 }
 .messaging { padding: 0 0 50px 0;}
 .msg_history {
-  height: 516px;
+  height: 320px;
   overflow-y: auto;
 }
 </style>
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/lightbox.js"></script>
-  <script src="assets/js/tabs.js"></script>
-  <script src="assets/js/video.js"></script>
-  <script src="assets/js/slick-slider.js"></script>
-  <script src="assets/js/custom.js"></script>
-  <script>
-    //according to loftblog tut
-    $('.nav li:first').addClass('active');
-
-    var showSection = function showSection(section, isAnimate) {
-      var
-        direction = section.replace(/#/, ''),
-        reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-        reqSectionPos = reqSection.offset().top - 0;
-
-      if (isAnimate) {
-        $('body, html').animate({
-            scrollTop: reqSectionPos
-          },
-          800);
-      } else {
-        $('body, html').scrollTop(reqSectionPos);
-      }
-
-    };
-
-    var checkSection = function checkSection() {
-      $('.section').each(function () {
-        var
-          $this = $(this),
-          topEdge = $this.offset().top - 80,
-          bottomEdge = topEdge + $this.height(),
-          wScroll = $(window).scrollTop();
-        if (topEdge < wScroll && bottomEdge > wScroll) {
-          var
-            currentId = $this.data('section'),
-            reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-          reqLink.closest('li').addClass('active').
-          siblings().removeClass('active');
-        }
-      });
-    };
-
-    $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
-      if ($(e.target).hasClass('external')) {
-        return;
-      }
-      e.preventDefault();
-      $('#menu').removeClass('active');
-      showSection($(this).attr('href'), true);
-    });
-
-    $(window).scroll(function () {
-      checkSection();
-    });
-  </script>
-  
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -555,6 +492,7 @@ https://templatemo.com/tm-557-grad-school
       checkSection();
     });
   </script>
+  
   
   <style>
     :root {
@@ -639,6 +577,18 @@ https://templatemo.com/tm-557-grad-school
 
     }
   </style>
+  <script src="http://code.jquery.com/jquery.js"></script>
+
+  <!-- If no online access, fallback to our hardcoded version of jQuery -->
+  <script>
+      window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="includes/js/script.js"></script>
 </body>
 
 </html>
