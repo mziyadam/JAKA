@@ -512,6 +512,12 @@ section.features .col-4 {
   }
 
 }
+.scrol {
+  height: 500px;
+width: auto;
+  overflow-y: auto;
+  overflow-x: hidden
+}
 /*
 .tab-pane{
   height:516px;
