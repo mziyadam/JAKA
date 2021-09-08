@@ -5,6 +5,11 @@ TemplateMo 557 Grad School
 https://templatemo.com/tm-557-grad-school
 
 */
+@media only screen and (max-width: 1077px) {
+  .anot{
+      margin-top: 70px;
+  }
+}
 
 
 @import url(fontawesome.css);
