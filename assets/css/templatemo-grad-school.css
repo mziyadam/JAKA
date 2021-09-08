@@ -10,6 +10,28 @@ https://templatemo.com/tm-557-grad-school
       margin-top: 70px;
   }
 }
+.role-chose{
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.5s;
+  line-height: 20px;
+}
+.role-chose div{
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+.role-chose div.act{
+  border-bottom: 2px solid #f5a425;
+}
+.role-chose div:not(.act):hover{
+  border-bottom: 1px solid #f5a425;
+}
 
 
 @import url(fontawesome.css);

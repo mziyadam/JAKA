@@ -131,12 +131,17 @@ https://templatemo.com/tm-557-grad-school
           <div class="right-content">
             <div class="top-content">
               <h3>Selamat Datang</h3>
+              <div class="row role-chose justify-content-center">
+                <div class="col-md-4 act">Mahasiswa</div>
+                <div class="col-md-4">Dosen</div>
+                <div class="col-md-4">Admin</div>
+              </div>
             </div>
             <form id="contact" action="" method="get">
               <div class="row">
                 <div class="col-md-12">
                   <fieldset>
-                    <input name="username" type="text" class="form-control" id="username" placeholder="Your Username"
+                    <input name="username" type="text" class="form-control" id="username" placeholder="NIM / NIP"
                       required="">
                   </fieldset>
                 </div>
@@ -163,7 +168,7 @@ https://templatemo.com/tm-557-grad-school
       </div>
     </div>
   </section>
-  <section class="features">
+  <!-- <section class="features">
     <div class="container">
       <div class="row">
 
@@ -206,7 +211,7 @@ https://templatemo.com/tm-557-grad-school
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
 
@@ -236,6 +241,14 @@ https://templatemo.com/tm-557-grad-school
   <script src="assets/js/slick-slider.js"></script>
   <script src="assets/js/custom.js"></script>
   <script>
+    let role = $('.role-chose');
+    $('.role-chose div').click(function (){
+      $.each(role.children(),function (ind, val){
+        $(val).removeClass('act');
+      });
+      $(this).addClass('act');
+    });
+    
     //according to loftblog tut
     $('.nav li:first').addClass('active');
 
